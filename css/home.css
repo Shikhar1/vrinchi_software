@@ -1044,7 +1044,6 @@ ul{list-style: none;;}
     text-align: left;
     color: #3B3F48;}
 
-.swiper a{color: #03AD98 !important;
-    font-size: 14px;}
+.swiper a{color: #03AD98 !important;font-size: 14px;}
 
     .swiper-pagination{position: relative; top:12px;display: none;} 
