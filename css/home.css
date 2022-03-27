@@ -938,7 +938,7 @@ ul{list-style: none;;}
 .social-icon{padding-top:10px;}
 .language a{font-size:18px;color:#000 !important;}
 
-.orange {
+/* .orange {
     text-shadow: 0 0 3em #027e6f;
     animation: glow 1.5s ease-in-out infinite;
   }
@@ -952,7 +952,7 @@ ul{list-style: none;;}
       color: #027e6f;
     }
   }  
-
+ */
 .waves {
       position: relative;
       width: 100%;
