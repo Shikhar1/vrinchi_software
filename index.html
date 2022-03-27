@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +18,7 @@
         integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -55,77 +56,7 @@
   color: #FFFFFF;}
 
   .btn-info:hover{ color:#255784;background:#2196f3;box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;width:180px;}
-.waves {
-      position: relative;
-      width: 100%;
-      height: 15vh;
-      margin-bottom: -7px;
-      min-height: 100px;
-      max-height: 100px;
-  }
 
-  .parallax > use {
-      -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-              animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-  }
-
-  .parallax > use:nth-child(1) {
-      -webkit-animation-delay: -2s;
-              animation-delay: -2s;
-      -webkit-animation-duration: 7s;
-              animation-duration: 7s;
-  }
-
-  .parallax > use:nth-child(2) {
-      -webkit-animation-delay: -3s;
-              animation-delay: -3s;
-      -webkit-animation-duration: 10s;
-              animation-duration: 10s;
-  }
-
-  .parallax > use:nth-child(3) {
-      -webkit-animation-delay: -4s;
-              animation-delay: -4s;
-      -webkit-animation-duration: 13s;
-              animation-duration: 13s;
-  }
-
-  .parallax > use:nth-child(4) {
-      -webkit-animation-delay: -5s;
-              animation-delay: -5s;
-      -webkit-animation-duration: 20s;
-              animation-duration: 20s;
-  }
-
-  @-webkit-keyframes moveForever {
-      0% {
-          -webkit-transform: translate3d(-90px, 0, 0);
-                  transform: translate3d(-90px, 0, 0);
-      }
-      100% {
-          -webkit-transform: translate3d(85px, 0, 0);
-                  transform: translate3d(85px, 0, 0);
-      }
-  }
-
-  @keyframes moveForever {
-      0% {
-          -webkit-transform: translate3d(-90px, 0, 0);
-                  transform: translate3d(-90px, 0, 0);
-      }
-      100% {
-          -webkit-transform: translate3d(85px, 0, 0);
-                  transform: translate3d(85px, 0, 0);
-      }
-  }
-
-  @media (max-width : 768px) {
-
-      .waves {
-          height: 40px;
-          min-height: 40px;
-      }
-  }
 
 
 </style>
@@ -250,20 +181,13 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="row">
             <img src="images/rightplus.png" alt="rightplus" class="rightplus">
         </div>
-
-
         <div class="row opd">
-
             <div class="col-lg-6 text-center">
                 <img src="images/OPD_700x570_450x450.png" class="animate" alt="opd">
             </div>
-
             <div class="col-lg-6 opd-heading">
                 <h1>OPD Section</h1>
                 <p>Portea is partnered with the top NABL certified labs in the country. We also have a team of
@@ -272,16 +196,11 @@
                     Booking a lab test is quick and easy.</p>
                 <a href="#" class="btn btn-info" role="button">Know More <i class='fa fa-arrow-right'></i></a>
             </div>
-
         </div>
-
         <div class="row">
             <img src="images/rightplus.png" alt="rightplus" class="rightplus2">
         </div>
-
-
         <div class="row clinic">
-
             <div class="col-lg-5 clinic-heading">
                 <h1>Digital Clinic</h1>
                 <p>Portea is partnered with the top NABL certified labs in the country. We also have a team of
@@ -289,15 +208,11 @@
                     phlebotomists, who collect samples from patients’ home. Booking a lab test is quick and easy.</p>
                 <a href="#" class="btn btn-info" role="button">Know More <i class='fa fa-arrow-right'></i></a>
             </div>
-
             <div class="col-lg-7 text-center">
                 <img src="images/digital_700x570.png" class="animate" alt="lab">
             </div>
         </div>
-
         <div class="row healthcare">
-
-
             <h1 class="healthcare-heading">India’s Largest Healthcare Platform</h1>
             <div class="col-sm-1"></div>
             <div class="col-sm-3 box2">
@@ -312,12 +227,8 @@
                 <h1>1800M+</h1>
                 <p>Cities</p>
             </div>
-
         </div>
-
-
         <div class="row people">
-
             <h1 class="people-heading">docOPD is a Healthcare Company, Committed in<br> high-quality Healthcare Delivery
             </h1>
             <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor.<br> Voluptate
@@ -328,13 +239,13 @@
             <div class="col-sm-5" style="text-align:right;">
                 <img src="images/CEO1.jfif" alt="">
                 <h2 class="title">Mr. Vijender S Bisht</h2>
-                <p style="font-family: 'Source Sans Pro';font-size:20px;text-align:right;">CEO Founder</p>
+                <p style="font-size:20px;text-align:right;">CEO Founder</p>
             </div>
 
             <div class="col-sm-5">
                 <img src="images/CEO2.jfif" alt="">
                 <h2 class="title">Mr. Abhishek Kumar</h2>
-                <p style="font-family: 'Source Sans Pro';font-size:20px;text-align:left;">CEO Founder</p>
+                <p style="font-size:20px;text-align:left;">CEO Founder</p>
 
             </div>
 
@@ -367,19 +278,14 @@
 
 
         <div class="container" style="margin-top:50px;margin-bottom:20px;">
-
-
             <h1 class="customer">What our customer says</h1>
-
             <div id="demo" class="carousel slide" data-ride="carousel">
-
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active"></li>
                     <li data-target="#demo" data-slide-to="1"></li>
                     <li data-target="#demo" data-slide-to="2"></li>
                 </ul>
-
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -621,20 +527,14 @@
                     </a>
                 </div>
               </div>
-
-
-
               <div class="row app">
-
                   <div class="col-lg-5 app-heading">
                       <h1>Enroll for Integrated<br> Health Benefits<br> in One Subscription</h1>
                       <p>We're available across devices and platforms. Consult from anywhere at your convenience</p>
-
                       <p><img src="images/apple.png" alt="apple">
                           <img src="images/googleplay.png" alt="googleplay">
                       </p>
                   </div>
-
                   <div class="col-lg-7 text-center">
                       <img src="images/mobile_570x700.png" class="animate" alt="mobile">
                   </div>
@@ -650,7 +550,7 @@
 font-style: normal;
 font-weight: 400;
 font-size: 46px;
-line-height: 65px;">Latest Blogs</h1>
+line-height: 65px;padding-bottom:20px;">Latest Blogs</h1>
 </div>
 
 
@@ -728,7 +628,7 @@ line-height: 65px;">Latest Blogs</h1>
      <p class="terms">All information, content, and material of this website is for informational purposes only and are not intended to serve as a<br> substitute for the Consultation, Diagnosis, and/or Medical Treatment of a qualified Medical Practitioner.</p>
 
      <div class="col-sm-3">
-       <img src="images/logo_160x55.png" alt="logo">
+       <img src="images/logo_160x55.png" alt="logo" style="width: 160px;padding-left: 20px; padding-bottom: 20px;">
          <p><img src="images/apple_100x34.png" alt="apple">
              <img src="images/googleplay_100x34.png" alt="googleplay"></p>
      </div>
@@ -774,11 +674,10 @@ line-height: 65px;">Latest Blogs</h1>
            <li><a href=""><i class="fa fa-facebook"></i></a></li>
            <li><a href=""><i class="fa fa-twitter"></i></a></li>
 
-  </ul>
-   </div>
-</div>
-     
-     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          </ul>
+      </div>
+    </div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
         <g class="parallax">
             <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
@@ -788,7 +687,12 @@ line-height: 65px;">Latest Blogs</h1>
         </g>
     </svg>
 
+
    </div>
+
+
+
+
 </div>
 
 
