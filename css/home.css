@@ -938,7 +938,7 @@ ul{list-style: none;;}
 .social-icon{padding-top:10px;}
 .language a{font-size:18px;color:#000 !important;}
 
-/* .orange {
+.orange {
     text-shadow: 0 0 3em #027e6f;
     animation: glow 1.5s ease-in-out infinite;
   }
@@ -951,4 +951,4 @@ ul{list-style: none;;}
       text-shadow: 0 0 0.5em #b4fef5, 0 0 1.5em #9bfdf2, 0 0 5em #68fdeb, 0 0 5em #04fbde, 0 0 0.2em #03c9b2;
       color: #027e6f;
     }
-  }  */
+  }  
