@@ -1493,7 +1493,7 @@ section.cust-slider {
         padding-right: 0px;
     }
     .testimonial {
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .enroll-sect .app{
         flex-direction: column-reverse;
@@ -1757,6 +1757,7 @@ section.cust-slider {
         text-align: center;
         font-size: 16px !important;
         line-height: 24px !important;
+        display:flex;
     }
     .footer-logo {
         left: 0;
