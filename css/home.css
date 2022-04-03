@@ -194,14 +194,14 @@ img {
     position: absolute;
     left: 0;
     top: 16px;
-    width: 251px;
-    height: 58px;
+    width: 270px;
+    height: 88px;
 }
 .smallwave {
     position: absolute;
     right: 7%;
     width: 201px;
-    top: 85.02%;
+    top: 83.02%;
     height: 119px;
 }
 .neel {
@@ -1782,7 +1782,6 @@ section.cust-slider {
         font-size: 13px;
         padding-left: 13px;
     }
-    .terms {padding: 0px 15px;}
     .footer h2{font-size:16px;}
 
 }
