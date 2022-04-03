@@ -1781,7 +1781,8 @@ section.cust-slider {
         font-size: 13px;
         padding-left: 13px;
     }
-}
+    .enroll-para{display:revert !important;}
+ }
 @media only screen and (min-width: 768px){
     .footer-logo-mob {
         display: none;
