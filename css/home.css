@@ -1811,6 +1811,8 @@ section.cust-slider {
         text-align: center;        
     }
     .rightplus, .rightplus2, .rightplus3, .leftplus{display: none;}
+    .hero-head p{font-size:44px !important;}
+    .mob-banner .hero-image {position: relative;left: 10%;}
 
 }
 
