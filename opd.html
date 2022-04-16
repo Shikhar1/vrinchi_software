@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>OPD Page</title>
+</head>
+
+<body>
+    <header class="header home-header sticky-top">
+        <nav class="navbar navbar-expand-lg desktop-header-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="img-fluid" alt="Header Logo">
+                </a>
+                <div class="navbar-right">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="lang" role="button" data-bs-toggle="dropdown">
+                                 English <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="lang">
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link get-link" href="#" data-bs-toggle="modal" data-bs-target="#get-callback">Get a call back</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link cart-btn">
+                                <i class="fa-solid fa-cart-shopping"></i><span class="badge">5</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/ Navbar Right -->
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg mobile-header-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="img-fluid" alt="Header Logo">
+                </a>
+                <div class="mobile-nav-right">
+                    <a href="#" class="cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i><span class="badge">5</span>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="lang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="lang">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#get-callback">Get a call back</a>
+                        </li>
+                    </ul>
+                </div>
+               <!--/ Navbar Collapse -->
+            </div>
+        </nav>
+
+    </header>
+    <section class="banner-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="banner-content">
+                        <h2 class="banner-title">Family Doctor Consultation</h2>
+                        <p>Quick family doctor telehealth consultation</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="banner-img">
+                        <div class="doctor-img">
+                            <img src="images/female-doc.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--/ Banner Section -->
+    <section class="serch-bar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="search-p">
+                        <div class="wrapper">
+                            <div class="search-input">
+                            <a href="" target="_blank" hidden></a>
+                            <input type="text" placeholder="Search Doctors, Problem, Condition">
+                            <div class="autocom-box">
+                                <!-- here list are inserted from javascript -->
+                            </div>
+                            <div class="icon"><i class="fas fa-search"></i></div>
+                            </div>
+                        </div>
+                          <div class="search-tab">
+                            <ul>
+                                <li><a href="#">Diabetes</a></li>
+                                <li><a href="#">Covid 19</a></li>
+                                <li><a href="#">Urology</a></li>
+                                <li><a href="#">Pediatrics</a></li>
+                                <li><a href="#">Orthopedic Surgery</a></li>
+                                <li><a href="#">Top Hospitals</a></li>
+                                <li><a href="#">Lab Tests</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Section -->
+    <section class="opd-featured-section sec-py">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="images/icons/mobile.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="title">Dial docOPD</h3>
+                                    <p> Medical Helpline</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="images/icons/doctor.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="title">Talk to Doctor</h3>
+                                    <p> (Within 30min)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="icon">
+                                    <img src="images/icons/prescription.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="title">Get Prescription</h3>
+                                    <p> SMS or Whatsapp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Row -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Opd Featured Section -->
+    <section class="opd-section">
+        <div class="container" data-aos="fade-up-left">
+            <div class="opd-item">
+                <img src="images/opd-bg-top.png" class="img-fluid opd-animate-top" alt="">
+                <img src="images/opd-bg-bottom.png" class="img-fluid opd-animate-bottom" alt="">
+                <div class="item-content-wrap">
+                    <div class="section-header">
+                        <h2 class="title">Sampurn Suraksha</h2>
+                        <p>A complete OPD coverage healthcare plan. No worry of cost, everything is covered in this package. </p>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="opd-content">
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/doctor-consultation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Doctor Consultation</h3>
+                                    </header>
+                                    <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="opd-img opd-bg-1">
+                                <img src="images/Medical-prescription-bro.png" class="animate img-fluid" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--/ OPD Item Content Wrap-->
+            </div>
+        </div>
+    </section>
+    <section class="opd-section" data-aos="fade-down-right">
+        <div class="container">
+            <div class="opd-item">
+                <img src="images/opd-bg-top.png" class="img-fluid opd-animate-top" alt="">
+                <img src="images/opd-bg-bottom.png" class="img-fluid opd-animate-bottom" alt="">
+                <div class="item-content-wrap">
+                    <div class="section-header">
+                        <h2 class="title">Sampurn Suraksha</h2>
+                        <p>A complete OPD coverage healthcare plan. No worry of cost, everything is covered in this package. </p>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="opd-content">
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/doctor-consultation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Doctor Consultation</h3>
+                                    </header>
+                                </article>
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/investigation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Investigation</h3>
+                                    </header>
+                                    <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="opd-img opd-bg-2">
+                                <img src="images/Blood-test-bro.png" class="animate img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ OPD Item Content Wrap-->
+            </div>
+        </div>
+    </section>
+    <section class="opd-section">
+        <div class="container" data-aos="fade-up-left">
+            <div class="opd-item">
+                <img src="images/opd-bg-top.png" class="img-fluid opd-animate-top" alt="">
+                <img src="images/opd-bg-bottom.png" class="img-fluid opd-animate-bottom" alt="">
+                <div class="item-content-wrap">
+                    <div class="section-header">
+                        <h2 class="title">Sampurn Suraksha</h2>
+                        <p>A complete OPD coverage healthcare plan. No worry of cost, everything is covered in this package. </p>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="opd-content">
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/doctor-consultation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Doctor Consultation</h3>
+                                    </header>
+                                </article>
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/investigation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Investigation</h3>
+                                    </header>
+                                </article>
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/medicine.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Medicine</h3>
+                                    </header>
+                                    <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="opd-img opd-bg-3">
+                                <img src="images/First-aid-kit-bro.png" class="animate img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ OPD Item Content Wrap-->
+            </div>
+        </div>
+    </section>
+    <section class="opd-section">
+        <div class="container" data-aos="fade-down-right">
+            <div class="opd-item">
+                <img src="images/opd-bg-top.png" class="img-fluid opd-animate-top" alt="">
+                <img src="images/opd-bg-bottom.png" class="img-fluid opd-animate-bottom" alt="">
+                <div class="item-content-wrap">
+                    <div class="section-header">
+                        <h2 class="title">Sampurn Suraksha</h2>
+                        <p>A complete OPD coverage healthcare plan. No worry of cost, everything is covered in this package. </p>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <div class="opd-content">
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/doctor-consultation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Doctor Consultation</h3>
+                                    </header>
+                                </article>
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/investigation.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Investigation</h3>
+                                    </header>
+                                </article>
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/medicine.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Medicine</h3>
+                                    </header>
+                                </article>
+                                <article>
+                                    <header class="title-wrap">
+                                        <div class="icon">
+                                            <img src="images/icons/follow-up.png" class="img-fluid" alt="">
+                                        </div>
+                                        <h3 class="title">Follow Up</h3>
+                                    </header>
+                                    <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="opd-img opd-bg-4">
+                                <img src="images/Gynecology-consultation-pana.png" class="animate img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ OPD Item Content Wrap-->
+            </div>
+        </div>
+    </section>
+    <section class="opd-section">
+        <div class="container" data-aos="fade-left">
+            <div class="opd-item">
+                <img src="images/opd-bg-top.png" class="img-fluid opd-animate-top" alt="">
+                <img src="images/opd-bg-bottom.png" class="img-fluid opd-animate-bottom" alt="">
+                <div class="item-content-wrap">
+                    <div class="section-header">
+                        <h2 class="title">Sampurn Suraksha</h2>
+                        <p>A complete OPD coverage healthcare plan. No worry of cost, everything is covered in this package. </p>
+                    </div>
+                    <div class="row justify-content-center mb-4 mb-lg-5">
+                        <div class="col-lg-4">
+                            <div class="opd-img opd-suraksha-group">
+                                <img src="images/opd-suraksha.png" class="img-fluid" alt="">
+                                <div class="opd-suraksha-item one mt-3 mt-lg-0">
+                                    <img src="images/icons/doctor-consultation.png" class="img-fluid" alt="">
+                                    <p>Doctor Consultation</p>
+                                </div>
+                                <div class="opd-suraksha-item two mt-3 mt-lg-0">
+                                    <img src="images/icons/investigation.png" class="img-fluid" alt="">
+                                    <p>Investigation</p>
+                                </div>
+                                <div class="opd-suraksha-item three mt-3 mt-lg-0">
+                                    <img src="images/icons/medicine.png" class="img-fluid" alt="">
+                                    <p>Medicine</p>
+                                </div>
+                                <div class="opd-suraksha-item four mt-3 mt-lg-0">
+                                    <img src="images/icons/doctor-consultation.png" class="img-fluid" alt="">
+                                    <p>Follow Up</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ OPD Item Content Wrap-->
+                <div class="opd-btn text-center">
+                    <a href="#" class="btn btn-solid">Book complete package now</a>
+                </div>
+            </div>
+            <!--./ Opd Item -->
+        </div>
+    </section>
+    <!--/ Opd section -->
+
+    <section class="opd-health-plan sec-py">
+        <div class="container-fluid">
+            <div class="section-header text-center">
+                <h2 class="title">Health Plans - OPD + Preventive + Hospitilization</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-11 offset-lg-1">
+                    <div class="opd-plan-carousel owl-carousel owl-theme">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="images/icons/bed.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">360 Health Plan (OPD + IPD)</a></h3>
+                                <p>12 Month OPD coverage & Free Rs1 Lac Health coverage</p>
+                                <div class="price-tag">
+                                    <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
+                                    <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 1999</del></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="images/icons/bed.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">360 Health Plan (OPD + IPD)</a></h3>
+                                <p>12 Month OPD coverage & Free Rs1 Lac Health coverage</p>
+                                <div class="price-tag">
+                                    <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
+                                    <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 1999</del></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="images/icons/bed.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">360 Health Plan (OPD + IPD)</a></h3>
+                                <p>12 Month OPD coverage & Free Rs1 Lac Health coverage</p>
+                                <div class="price-tag">
+                                    <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
+                                    <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 1999</del></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="icon">
+                                <img src="images/icons/bed.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">360 Health Plan (OPD + IPD)</a></h3>
+                                <p>12 Month OPD coverage & Free Rs1 Lac Health coverage</p>
+                                <div class="price-tag">
+                                    <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
+                                    <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 1999</del></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Card -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--/ OPd Plan Carousel -->
+    <section class="top-doctor-section sec-py">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Top doctors for general physician</h2>
+            </div>
+            <div class="doctors doctor-carousel owl-carousel owl-theme">
+                <div class="card">
+                    <img src="images/doctors/1.png" class="img-fluid" alt="">
+                    <div class="card-header">
+                        <h3 class="title"><a href="#">Dr. Sanika Kumar</a></h3>
+                        <span class="badge"><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Urologist, Andrologist, Laparoscopic Surgeon</p>
+                        <span class="degree">MBBS, MS, MCh - Urology</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price-tag">
+                            <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                            <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 599</del></span>
+                        </div>
+                        <a href="#" class="btn btn-solid">Book Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/doctors/1.png" class="img-fluid" alt="">
+                    <div class="card-header">
+                        <h3 class="title"><a href="#">Dr. Sanika Kumar</a></h3>
+                        <span class="badge"><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Urologist, Andrologist, Laparoscopic Surgeon</p>
+                        <span class="degree">MBBS, MS, MCh - Urology</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price-tag">
+                            <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                            <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 599</del></span>
+                        </div>
+                        <a href="#" class="btn btn-solid">Book Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/doctors/1.png" class="img-fluid" alt="">
+                    <div class="card-header">
+                        <h3 class="title"><a href="#">Dr. Sanika Kumar</a></h3>
+                        <span class="badge"><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Urologist, Andrologist, Laparoscopic Surgeon</p>
+                        <span class="degree">MBBS, MS, MCh - Urology</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price-tag">
+                            <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                            <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 599</del></span>
+                        </div>
+                        <a href="#" class="btn btn-solid">Book Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/doctors/1.png" class="img-fluid" alt="">
+                    <div class="card-header">
+                        <h3 class="title"><a href="#">Dr. Sanika Kumar</a></h3>
+                        <span class="badge"><i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Urologist, Andrologist, Laparoscopic Surgeon</p>
+                        <span class="degree">MBBS, MS, MCh - Urology</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price-tag">
+                            <span class="offer-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                            <span class="price"><del><i class="fa-solid fa-indian-rupee-sign"></i> 599</del></span>
+                        </div>
+                        <a href="#" class="btn btn-solid">Book Now</a>
+                    </div>
+                </div>
+                <!--/ Crad -->
+            </div>
+        </div>
+    </section>
+    <!--/ Top Doctor Carousel -->
+    <section class="we-treat-section">
+        <div class="container-fluid">
+            <div class="we-treat-content sec-py">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="title">Common symptoms what we treat</h2>
+                    </div>
+                    <div class="we-treat-container">
+                        <div class="card">
+                            <img src="images/we-treat/1.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Diabetes not under control</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/2.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Acne? Dark spots skin problem</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/3.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Over weight or under weight</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/4.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Sexual problems</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/5.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Depression or Anxiety</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/6.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Infertility problem in conceiving</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/7.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Depression or Anxiety</a></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/we-treat/8.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <h3 class="title"><a href="#">Hair fall? Grey hair?</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-solid">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!--/ We Treat Content -->
+        </div>
+    </section>
+    <!--/ We Treat Section -->
+    <section class="specialist-section sec-py">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="title">Not sure which doctor to consult?</h2>
+            </div>
+            <div class="specialist-carousel owl-carousel owl-theme">
+                <div class="card">
+                    <img src="images/specialists/1.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Pediatrician</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/2.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Eye Specialist</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/3.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Psychotherapist</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/4.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Dentist</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/5.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Gynecologist</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/6.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Orthopedician</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/1.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Pediatrician</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/specialists/2.png" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <a href="#">Eye Specialist</a>
+                    </div>
+                </div>
+                <!--/ Card -->
+            </div>
+        </div>
+    </section>
+    <!--/ Specialist Carousel -->
+    <section class="testimonial-section sec-pt">
+        <div class="container-fluid pe-0">
+            <div class="row g-0">
+                <div class="col-lg-11 offset-lg-1">
+                    <div class="section-header">
+                        <h2 class="title">What our customer says</h2>
+                    </div>
+                    <div class="testimonial-carousel owl-carousel owl-theme">
+                        <div class="card">
+                            <img src="images/customerslide.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
+                                    dolor. Voluptate exercitation incididunt aliquip exercitation incididunt aliquip.
+                                    Voluptate exercitation incididunt aliquip exercitation</p>
+                                <a href="#" class="link"><i class="fa-solid fa-circle-play"></i> Click To View Video</a>
+                                <div class="customer-info">
+                                    <h3 class="customer-name">Courtney Henry</h3>
+                                    <p>Marketing Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/customerslide.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
+                                    dolor. Voluptate exercitation incididunt aliquip exercitation incididunt aliquip.
+                                    Voluptate exercitation incididunt aliquip exercitation</p>
+                                <div class="customer-info">
+                                    <h3 class="customer-name">Courtney Henry</h3>
+                                    <p>Marketing Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/customerslide.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
+                                    dolor. Voluptate exercitation incididunt aliquip exercitation incididunt aliquip.
+                                    Voluptate exercitation incididunt aliquip exercitation</p>
+                                <a href="#" class="link"><i class="fa-solid fa-circle-play"></i> Click To View Video</a>
+                                <div class="customer-info">
+                                    <h3 class="customer-name">Courtney Henry</h3>
+                                    <p>Marketing Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/customerslide.png" class="img-fluid" alt="">
+                            <div class="card-body">
+                                <p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum
+                                    dolor. Voluptate exercitation incididunt aliquip exercitation incididunt aliquip.
+                                    Voluptate exercitation incididunt aliquip exercitation</p>
+                                <div class="customer-info">
+                                    <h3 class="customer-name">Courtney Henry</h3>
+                                    <p>Marketing Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Card -->
+                    </div>
+                    <!--/ Testimonial -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--/ Testimonial -->
+    <section class="download-section sec-pt">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 order-last order-lg-first">
+                    <div class="download-content">
+                        <h2 class="title">Enroll for Integrated<br> Health Benefits in One<br>Subscription</h2>
+                        <p>We're available across devices and platforms. <br>Consult from anywhere at your convenience.</p>
+                        <div class="download-app">
+                            <a href="#"><img src="images/apple.png" alt="apple" class="apple"></a>
+                            <a href="#"><img src="images/googleplay.png" alt="googleplay" class="google"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6  order-first order-lg-last">
+                    <div class="app-screen">
+                        <img src="images/mobilefront_1_605x662.png" class="animate img-fluid" alt="mobile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Download Section -->
+    <section class="blog-section sec-py">
+        <img src="images/rightplus.png" alt="rightplus" class="rightplus">
+        <div class="container-fluid">
+            <div class="section-header text-center">
+                <h2 class="title">Latest Blogs</h2>
+            </div>
+            <div class="blog-carousel owl-carousel owl-theme">
+                <div class="card">
+                    <img src="images/blog/3.jpg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span class="date">February 3,2021</span>
+                        </div>
+                        <h3 class="title"><a href="#">Heavily Mutated Omicron Variant Puts Scientists on Alert</a></h3>
+                        <a href="#" class="btn-text">Read More<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/blog/1.jpg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span class="date">February 3,2021</span>
+                        </div>
+                        <h3 class="title"><a href="#">Heavily Mutated Omicron Variant Puts Scientists on Alert</a></h3>
+                        <a href="#" class="btn-text">Read More<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/blog/2.jpg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span class="date">February 3,2021</span>
+                        </div>
+                        <h3 class="title"><a href="#">Heavily Mutated Omicron Variant Puts Scientists on Alert</a></h3>
+                        <a href="#" class="btn-text">Read More<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/blog/3.jpg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span class="date">February 3,2021</span>
+                        </div>
+                        <h3 class="title"><a href="#">Heavily Mutated Omicron Variant Puts Scientists on Alert</a></h3>
+                        <a href="#" class="btn-text">Read More<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/blog/1.jpg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span class="date">February 3,2021</span>
+                        </div>
+                        <h3 class="title"><a href="#">Heavily Mutated Omicron Variant Puts Scientists on Alert</a></h3>
+                        <a href="#" class="btn-text">Read More<i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!--/ Card -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="main-footer">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-widget footer-about">
+                            <div class="mobile-footer-about">
+                                <img src="images/logo_160x55.png" alt="logo" class="footer-logo">
+                                <div class="download-btn">
+                                    <img src="images/apple_100x34.png" alt="apple">
+                                    <img src="images/googleplay_100x34.png" alt="googleplay">
+                                </div>
+                            </div>
+                            <!--/ Mobile Footer about -->
+                            <ul class="footer-top-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Terms and Sevices</a></li>
+                                <li><a href="#"> Privacy policy</a></li>
+                            </ul>
+                            <p>All information, content, and material of this website is for informational purposes only and are not intended to serve as a  substitute for the Consultation, Diagnosis, and/or Medical Treatment of a qualified Medical Practitioner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="footer-widget desktop-footer-about">
+                                    <img src="images/logo_160x55.png" alt="logo" class="footer-logo">
+                                    <div class="download-btn">
+                                        <img src="images/apple_100x34.png" alt="apple">
+                                        <img src="images/googleplay_100x34.png" alt="googleplay">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="footer-widget footer-link">
+                                    <h3 class="footer-title">Health Services</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Talk to Doctor </a></li>
+                                        <li><a href="#" target="_blank">Free 2nd Medical Opinion </a></li>
+                                        <li><a href="#" target="_blank">Free 2nd Medical Opinion </a></li>
+                                        <li><a href="#" target="_blank">Health Test Upto 50% Saving </a></li>
+                                        <li><a href="#" target="_blank">Free Medical Services </a></li>
+                                        <li><a href="#" target="_blank">Gift Health Card </a></li>
+                                        <li><a href="#" target="_blank">Book an Appointment </a></li>
+                                        <li><a href="#" target="_blank">Corporate Panel </a></li>
+                                        <li><a href="#" target="_blank">Swasthya Panel </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="footer-widget footer-link">
+                                    <h3 class="footer-title">Specialities Links</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank">Heart</a></li>
+                                        <li><a href="#" target="_blank">Urology </a></li>
+                                        <li><a href="#" target="_blank">Neurosurgery </a></li>
+                                        <li><a href="#" target="_blank">Spine Surgery </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="footer-widget footer-link footer-contact">
+                                    <h3 class="footer-title">Contact Details</h3>
+                                    <ul class="contact-links">
+                                        <li><i class="fa fa-phone"></i>&nbsp; +91-8800883265</li>
+                                        <li><i class="fa fa-envelope"></i>&nbsp; <a href="mailto:info@docopd.com">info@docopd.com</a></li>
+                                    </ul>
+                                    <div class="social-links">
+                                        <ul>
+                                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!--/ Footer Social link -->
+                                </div>
+                            </div>
+                            <!--/ Column -->
+                        </div>
+                    </div>
+                </div>
+                <!--/ Row -->
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="container text-center">
+                <p>Copyright © 2015-2022 docOPD Technologies Pvt Ltd</p>
+            </div>
+        </section>
+    </footer>
+    <div class="modal fade" id="get-callback" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa-solid fa-phone"></i> Get a Call Back</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <a href="#" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i></a>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control"  placeholder="Name">
+                        </div>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-solid">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>You can also call us at <a href="tel:">+91 99905 19519</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/autocomplate.js"></script>
+    <script src="assets/js/suggestions.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script>
+      AOS.init();
+   </script>
+
+    <script>
+        $('.opd-plan-carousel').owlCarousel({
+            loop:true,
+            margin:24,
+            nav:true,
+            autoWidth:true,
+            items:2,
+            navText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        $('.doctor-carousel').owlCarousel({
+            loop:true,
+            margin:24,
+            nav:true,
+            navText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        $('.specialist-carousel').owlCarousel({
+            loop:true,
+            margin:24,
+            nav:true,
+            navText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        });
+        $('.hero-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            navText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+        $('.tab-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            navText:['<i class="fa-solid fa-angle-left"></i>','<i class="fa-solid fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        $('.testimonial-carousel').owlCarousel({
+            loop: true,
+            margin: 24,
+            autoWidth: true,
+            items: 2,
+            nav: true,
+            navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+        $('.blog-carousel').owlCarousel({
+            loop: true,
+            margin: 24,
+            nav: true,
+            navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
